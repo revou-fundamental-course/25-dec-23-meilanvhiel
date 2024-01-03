@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Triangle Calculator</title>
+</head>
+<body>
+
+    <div class="container">
+        <section id="areaSection">
+            <h2>Hitung Luas Segitiga</h2>
+            <form id="areaForm">
+                <label for="base">Alas:</label>
+                <input type="number" id="base" required>
+                
+                <label for="height">Tinggi:</label>
+                <input type="number" id="height" required>
+
+                <button type="button" onclick="calculateArea()">Hitung</button>
+                <button type="button" onclick="resetAreaForm()">Reset</button>
+
+                <div id="areaResult"></div>
+            </form>
+        </section>
+
+        <section id="perimeterSection">
+            <h2>Hitung Keliling Segitiga</h2>
+            <form id="perimeterForm">
+                <label for="sideA">Sisi A:</label>
+                <input type="number" id="sideA" required>
+                
+                <label for="sideB">Sisi B:</label>
+                <input type="number" id="sideB" required>
+                
+                <label for="sideC">Sisi C:</label>
+                <input type="number" id="sideC" required>
+
+                <button type="button" onclick="calculatePerimeter()">Hitung</button>
+                <button type="button" onclick="resetPerimeterForm()">Reset</button>
+
+                <div id="perimeterResult"></div>
+            </form>
+        </section>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
